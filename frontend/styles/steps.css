@@ -1,0 +1,14 @@
+.steps{
+display:flex;
+justify-content:center;
+gap:80px;
+padding:60px;
+background:white;
+border-top:1px solid #eee;
+border-bottom:1px solid #eee;
+}
+
+.step{
+max-width:240px;
+text-align:center;
+}

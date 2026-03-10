@@ -1,0 +1,15 @@
+.cta{
+background:#eef2f1;
+padding:80px;
+text-align:center;
+}
+
+.cta h2{
+font-size:30px;
+margin-bottom:15px;
+}
+
+.cta p{
+color:#6b7280;
+margin-bottom:25px;
+}

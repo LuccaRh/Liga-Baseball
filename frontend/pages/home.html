@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LeagueBase</title>
+
+<link rel="stylesheet" href="../styles/global.css">
+<link rel="stylesheet" href="../styles/navbar.css">
+<link rel="stylesheet" href="../styles/hero.css">
+<link rel="stylesheet" href="../styles/steps.css">
+<link rel="stylesheet" href="../styles/features.css">
+<link rel="stylesheet" href="../styles/cta.css">
+<link rel="stylesheet" href="../styles/footer.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div id="navbar"></div>
+
+<!-- Hero -->
+<div id="hero"></div>
+
+<!-- Steps -->
+<div id="steps"></div>
+
+<!-- Features -->
+<div id="features"></div>
+
+<!-- CTA -->
+<div id="cta"></div>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+<script>
+
+async function loadComponent(id, file){
+
+const response = await fetch(file)
+const html = await response.text()
+
+document.getElementById(id).innerHTML = html
+
+}
+
+loadComponent("navbar","../components/navbar.html")
+loadComponent("hero","../components/hero.html")
+loadComponent("steps","../components/steps.html")
+loadComponent("features","../components/features.html")
+loadComponent("cta","../components/cta.html")
+loadComponent("footer","../components/footer.html")
+
+</script>
+
+</body>
+</html>

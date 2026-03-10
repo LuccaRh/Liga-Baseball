@@ -1,0 +1,38 @@
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:100px 80px;
+}
+
+.hero-text{
+max-width:520px;
+}
+
+.hero h1{
+font-size:44px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+color:#6b7280;
+margin-bottom:30px;
+}
+
+.hero-buttons{
+display:flex;
+gap:15px;
+}
+
+.dashboard-mock{
+width:420px;
+height:260px;
+background:white;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+}
