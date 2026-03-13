@@ -9,7 +9,10 @@
       "extensions": [
         "ms-python.python",
         "ms-python.vscode-pylance"
-      ]
+      ],
+      "settings": {
+        "python-envs.defaultEnvManager": "ms-python.python:system"
+      }
     }
   }
 }

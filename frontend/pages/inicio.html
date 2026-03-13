@@ -4,3 +4,25 @@
 
   <button type="submit">Criar Liga</button>
 </form>
+
+<script>
+document.getElementById("leagueForm").addEventListener("submit", async function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("leagueName").value;
+
+  const response = await fetch("http://localhost:8000/leagues", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      name: name
+    })
+  });
+
+  const data = await response.json();
+
+  alert(data.message);
+});
+</script>

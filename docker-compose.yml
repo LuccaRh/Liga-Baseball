@@ -8,6 +8,8 @@ services:
       - "8000:8000"
     depends_on:
       - db
+    env_file:
+      - .env
     volumes:
     - .:/app
 
@@ -17,6 +19,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 5757
       POSTGRES_DB: liga_baseball
+      POSTGRES_HOST: db
     ports:
       - "5432:5432"
     volumes:
